@@ -12,12 +12,22 @@ class NickChangeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nick_change)
 
-        nickDoneBtn.setOnClickListener {
+        okBtn.setOnClickListener {
+            val newNickName = changedNickEdt.text.toString()
+
             val resultIntent = Intent()
-            val newNick = changedNickEdt.text.toString()
-            resultIntent.putExtra("resultNick","newNick")
+//            왕복 티켓은 비어있는 인텐트다
+            resultIntent.putExtra("nick",newNickName)
             setResult(Activity.RESULT_OK,resultIntent)
             finish()
+
+
+//            나의 오답
+//            val resultIntent = Intent()
+//            val newNick = changedNickEdt.text.toString()
+//            resultIntent.putExtra("resultNick","newNick")
+//            setResult(Activity.RESULT_OK,resultIntent)
+//            finish()
 
         }
     }
