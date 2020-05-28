@@ -7,13 +7,14 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+        val REQ_FOR_NICK = 1001
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         changeNickBtn.setOnClickListener {
             val myIntent = Intent(this,NickChangeActivity::class.java)
-            startActivityForResult(myIntent,"1000")
+            startActivityForResult(myIntent,REQ_FOR_NICK)
 
 
         }

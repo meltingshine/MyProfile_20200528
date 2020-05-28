@@ -26,10 +26,11 @@
         android:layout_height="wrap_content"
         android:text="본인닉네임표시"/>
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
     <Button
         android:id="@+id/changeNickBtn"
         android:layout_width="80dp"
