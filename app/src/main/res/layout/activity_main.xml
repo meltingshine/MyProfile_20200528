@@ -54,13 +54,14 @@
             android:id="@+id/dialEdt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_weight="1"
+            android:inputType="phone"
             android:hint="상대방번호를 입력"/>
+
         <Button
             android:id="@+id/dialBtn"
-            android:layout_width="0dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="연결"/>
 
     </LinearLayout>
@@ -68,7 +69,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="20dp"
         android:text="메세지 전달"/>
 
     <LinearLayout
@@ -81,13 +82,13 @@
         android:id="@+id/smsContentEdt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
-        android:hint="문자로 보낼 내용"/>
+        android:layout_weight="1"
+        android:hint="문자로 보낼 내용"
+        android:singleLine="true"/>
     <Button
         android:id="@+id/smsSendBtn"
-        android:layout_width="0dp"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="문자 전송"/>
 
 </LinearLayout>
